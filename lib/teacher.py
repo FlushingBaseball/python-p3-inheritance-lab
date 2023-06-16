@@ -19,7 +19,13 @@ class Teacher(User):
 ]):
         super().__init__(first_name, last_name)
         self.knowledge = knowledge
+
+    def teach(self):
+        randomThing = random.randint(0, len(self.knowledge)-1)
+        return(self.knowledge[randomThing])
+
         
 
 
+## range and slicing 
 
